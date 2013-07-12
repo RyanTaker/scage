@@ -167,7 +167,6 @@
     <testSourceDirectory>src/test/scala</testSourceDirectory>
       <filters>
             <filter>build.properties</filter>
-          <filter>local-build.properties</filter>
           </filters>
       <resources>
         <resource>
@@ -180,7 +179,7 @@
               <directory>src/test/resources</directory>
           </testResource>
       </testResources>
-
+<pluginManagement>
     <plugins>
         <plugin>
               <groupId>org.codehaus.mojo</groupId>
@@ -360,6 +359,8 @@
             </executions>
         </plugin>
     </plugins>
+</pluginManagement>
+
   </build>
 
   <reporting>
